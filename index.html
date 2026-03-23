@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 邊框與背景練習</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif; /* 使用襯線字體以符合圖片風格 */
+            padding: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 600px;
+        }
+
+        .box {
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        /* 第一個方框：淺藍背景、紅色雙線邊框 */
+        .box-1 {
+            background-color: #C9DAF8;
+            border: 6px double #E06666;
+        }
+
+        /* 第二個方框：黃色背景、藍色實線圓角邊框 */
+        .box-2 {
+            background-color: #FFFF00;
+            border: 3px solid #4A86E8;
+            border-radius: 15px;
+        }
+
+        /* 第三個方框：綠色背景、灰色點狀邊框 */
+        .box-3 {
+            background-color: #6AA84F;
+            border: 8px dotted #777777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box-1">Hello World</div>
+        <div class="box box-2">Hello World</div>
+        <div class="box box-3">Hello World</div>
+    </div>
+
+</body>
+</html>
